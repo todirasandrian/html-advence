@@ -1,0 +1,23 @@
+@import "variables";
+@import "helperas";
+@import "reseet";
+@import "footer";
+body {
+  background: aqua;
+  display: flex;
+  appearance: none;
+  padding: 30px;
+}
+.p {
+  font-size: 30px; 
+}
+ul {
+  li { 
+    a {
+      font-size: 30px;
+    }
+  }
+}
+.blog {
+  @include vertical-mid();
+}
