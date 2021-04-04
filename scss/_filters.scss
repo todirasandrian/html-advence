@@ -1,0 +1,33 @@
+.filter-blur {
+  filter: blur(5px);
+}
+.filter-grayscale {
+  filter: grayscale(100%);
+}
+.filter-contrast {
+  filter: contrast(200%);
+}
+.filter-sepia {
+  filter: sepia(90%);
+}
+.filter-drop-shadow {
+  filter: drop-shadow(1px -1px 3px red) invert(55%);
+}
+.filter-hue-rotate {
+  filter: hue-rotate(90dge);
+}
+.filter-brightness {
+  filter: brightness(0.5);
+}
+.filter-opacity {
+  filter: opacity(0.4);
+}
+.filter-invert {
+  filter: invert(50%);
+}
+.filter-saturate {
+  filter: saturate(20%);
+}
+// .filter-url {
+//   filter: url(<calea pentru svg>);
+// }

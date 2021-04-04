@@ -1,24 +1,49 @@
 @import "variables";
 @import "helpers";
 @import "reset";
+@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
 @import "footer";
-@import "header";
-body {
-  background: aqua;
+@import "filters";
+@import "gradients";
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.main-wrapper {
   display: flex;
-  appearance: none;
-  padding: 30px;
+  flex-direction: column;
+  height: 100vh;
 }
-.p {
-  font-size: 30px; 
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: $sidebar-width;
+  border-right: 1px solid $defoult-bodrer-color;
+  padding-top: $header-height;
 }
-ul {
-  li { 
-    a {
-      font-size: 30px;
-    }
-  }
+.header,
+.main {
+ width: calc(100% - $sidebar-width);
+ margin-left: $sidebar-width;
 }
-.blog {
-  @include vertical-mid();
+.header {
+ height: $header-height;
+ border-bottom: 1px solid$defoult-bodrer-color;
+}
+.main {
+  flex: 1;
+}
+.section + .section {
+  margin-top: 80px;
+}
+.section__title {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 67px;
+  color: #333333;
+  border-bottom: 1px solid #0D3268;
+  padding-bottom: 21px;
+  margin-bottom: 35px;
 }
