@@ -1,3 +1,4 @@
+@import "../node_modules/breakpoint-sass/stylesheets/breakpoint" ;
 @import "variables";
 @import "helpers";
 @import "reset";
@@ -5,6 +6,7 @@
 @import "footer";
 @import "filters";
 @import "gradients";
+@import "ratio";
 
 img {
   max-width: 100%;
@@ -25,7 +27,7 @@ img {
 }
 .header,
 .main {
- width: calc(100% - $sidebar-width);
+ width: calc(100% - #{$sidebar-width});
  margin-left: $sidebar-width;
 }
 .header {

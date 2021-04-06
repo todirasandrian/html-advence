@@ -1,0 +1,43 @@
+.ratio-box {
+  position: relative;
+
+  &::after {
+    content: '';
+    padding-top: 56.25%;
+    display: block;
+  }
+
+  @include breakpoint (orientation portrait) {
+    &::after {
+     padding-top: 100%;
+    }
+  }
+
+
+ > * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  img,
+  video,
+  iframe {
+    object-fit: cover;
+  }
+}
+// @mixin flex ($alignment) {
+//   display: flex;
+//   align-items: $alignment;
+//   @content;
+  
+// }
+
+// @include breakpoint ($desktop) {
+
+// }
+// @media only screen and (max-width:768px) {
+  
+// }
