@@ -3,11 +3,11 @@
 
   &::after {
     content: '';
-    padding-top: 56.25%;
+    padding-top: 56.25%; //16:9
     display: block;
   }
 
-  @include breakpoint (orientation portrait) {
+  @include breakpoint ($phone $tablet) {
     &::after {
      padding-top: 100%;
     }
@@ -28,16 +28,17 @@
     object-fit: cover;
   }
 }
-// @mixin flex ($alignment) {
-//   display: flex;
-//   align-items: $alignment;
-//   @content;
+@mixin flex ($alignment) {
+  display: flex;
+  align-items: $alignment;
+@content;
+}
   
-// }
+//  }
 
-// @include breakpoint ($desktop) {
+//  @include breakpoint ($desktop) {
 
-// }
-// @media only screen and (max-width:768px) {
+//  }
+//  @media only screen and (max-width:768px) {
   
-// }
+//  }
