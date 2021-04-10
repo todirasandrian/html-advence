@@ -5,6 +5,7 @@
     <meta http-equiv="X-Ua-Compatibile" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial">
     <title>Document</title>
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
@@ -69,23 +70,22 @@
       <!-- <div id="content" class="icons"></div> -->
       <aside class="sidebar">
         <ul>
-         <li>
-           <a href="#filters" class="section open">Filters
-            <span class="sub-arow"></span>
-          </a>
-          <ul><li><a href="#">filter-blur </a></li></ul>
-          <ul><li><a href="#">filter-brightness </a></li></ul>
-          <ul><li><a href="#">fill-rule </a></li></ul>
-          <ul><li><a href="#">filter-contrast </a></li></ul>
-          <ul><li><a href="#">filter-drop-shadow </a></li></ul>
-          <ul><li><a href="#">filter-grayscale </a></li></ul>
-          <ul><li><a href="#">filter-hue-rotate </a></li></ul>
-          <ul><li><a href="#">filter-invert </a></li></ul>
-          <ul><li><a href="#">filter-opacity </a></li></ul>
-          <ul><li><a href="#">filter-saturate </a></li></ul>
-          <ul><li><a href="#">filter-sepia </a></li></ul>
-          <ul><li><a href="#">filter-url </a></li></ul>
-        </li>
+         <li class="dropdown"><a href="#filters" class="section open">Filters</a>
+          <ul>
+            <li><a href="#">filter-blur </a></li>    
+            <li><a href="#">filter-brightness </a></li>    
+            <li><a href="#">fill-rule </a></li>    
+            <li><a href="#">filter-contrast </a></li>    
+            <li><a href="#">filter-drop-shadow </a></li>    
+            <li><a href="#">filter-grayscale </a></li>    
+            <li><a href="#">filter-hue-rotate </a></li>    
+            <li><a href="#">filter-invert </a></li>    
+            <li><a href="#">filter-opacity </a></li>    
+            <li><a href="#">filter-saturate </a></li>    
+            <li><a href="#">filter-sepia </a></li>    
+            <li><a href="#">filter-url </a></li>
+          </ul>
+         </li>
          <li><a href="#gradients">Gradients </a></li>
          <li><a href="#Introduction">Introduction </a></li>
          <li><a href="#Visual Style" class="section open">Visual Style </a></li>
@@ -184,7 +184,184 @@
             </div>
           </div>
         </section>
+        <section class="section" id=transform>
+          <h2 class="section__title">Transform</h2>
+          <div class="section__content">
+            <div class="d-flex flex-wrap">
+              <div class="col-4 transform-action-area transform-action-area--1">
+                <div class="transform-element">Rotate nr:1</div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--2">
+                <div class="transform-element">Scale nr:2</div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--3">
+                <div class="transform-element">Translate nr:3</div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--4">
+                <div class="transform-element">Skew nr:4</div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--5">
+                <div class="transform-element">Matrix nr:5</div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--6">
+                <div class="transform-element">Rotate nr:6</div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--7">
+                <div class="transform-element">Rotate X nr:7</div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--8">
+                <div class="transform-element">Rotate Y nr:8</div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--9">
+                <div class="transform-element">Rotate Z nr:9</div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--10">
+                <div class="transform-element">Transform nr:10</div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--11">
+                <div class="transform-element">Rotate Rotate nr:11</div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--12">
+                <div class="transform-element">Rotate Perspective nr:12</div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--13">
+                <div class="transform-element">Transform 3D nr:13</div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--14">
+                <div class="transform-element">Transform nr:14</div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--15">
+                <div class="transform-element">Transform nr:15</div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--16">
+                <div class="transform-element">Transform nr:16</div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--17">
+                <div class="transform-element">Transform nr:17</div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--18">
+                <div class="transform-element">Transform nr:18</div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--19">
+                <div class="transform-element">Transform nr:19</div>
+              </div>
+              <div class="col-4 transform-action-area transform-action-area--20">
+                <div class="transform-element">Transform nr:20</div>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- <section class="section" id=transform>
+          <h2 class="section__title">Square (Cub)</h2>
+            <div class="d-flex flex-wrap"> 
+              <div class="scene">
+                <div class="cube">
+                  <div class="cube__face cube__face--front">front</div>
+                  <div class="cube__face cube__face--back">back</div>
+                  <div class="cube__face cube__face--right">right</div>
+                  <div class="cube__face cube__face--left">left</div>
+                  <div class="cube__face cube__face--top">top</div>
+                  <div class="cube__face cube__face--bottom">bottom</div>
+                </div>
+              </div>
+              <p class="radio-group">
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="front" checked /> front
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="right" /> right
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="back" /> back
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="left" /> left
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="top" /> top
+                </label>
+                <label>
+                  <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
+                </label>
+              </p>
+          </div>
+        </section>  -->
+        <section class="section" id=transform>
+          <h2 class="section__title">Square (Cub)</h2>
+            <div class="d-flex flex-wrap"> 
+              <div class="container">
+                <div class="cube">
+                  <div class="side front"></div>
+                  <div class="side left"></div>
+                  <div class="side right"></div>
+                  <div class="side back"></div>
+                  <div class="side top"></div>
+                  <div class="side bottom"></div>
+                </div>
+             </div>
+            </div>
+       </section>
+       <section class="section" id=forms>
+         <h2 class="section__title">Forms</h2>
+          <div class="section__content">  
+            <h1>Dropdown example</h1>
+            <div class="dropdown-wraper">
+              <input type="checkbox" class="dropdown-input" id="dropdown-example" name="dropdown-example">
+              <label for="dropdown-example" class="dropdown-buton" tabindex="0">Click me</label>
+                <div class="dropdown-content">
+                  <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                 </ul>
+               </div>
+           </div>
+            <h1>Card selector radio example</h1>
+            <div class="cards-list">
+              <input type="radio" class="card-input card-input-1" name="card-inputs" id="card-input-1">
+              <input type="radio" class="card-input card-input-2" name="card-inputs" id="card-input-2">
+              <input type="radio" class="card-input card-input-3" name="card-inputs" id="card-input-3">
+              <input type="radio" class="card-input card-input-4" name="card-inputs" id="card-input-4">
+              <label for="card-input-1" class="card-radio card-radio-1">Card content 1</label>
+              <label for="card-input-2" class="card-radio card-radio-2">Card content 2</label>
+              <label for="card-input-3" class="card-radio card-radio-3">Card content 3</label>
+              <label for="card-input-4" class="card-radio card-radio-4">Card content 4</label>
+            </div>
+            <h1>Checkbox and radio</h1>
+            <div>
+              <input type="checkbox" name="checkbox-ex" id="checkbox-ex">
+              <label for="checkbox-ex" class="checkbox-label>">
+                <div class="checkbox-box">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <path d="M3.556 14.222l-3.556 3.556 10.667 10.667 21.333-21.333-3.556-3.556-17.778 17.778-7.111-7.111z"></path>
+                   </svg>
+                 </div>
+                <span class="checkbox-text"> Checkbox label </span>
+              </label>
+          </div>
+          <h1>Simple Select</h1>
+          <div class="simple-select">
+            <select name="select-box" id="">
+              <option value="1">one</option>
+              <option value="2">two</option>
+              <option value="3">three</option>
+              <svg class="simple-select__arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" width="28" height="32" viewBox="0 0 28 32">
+                <path d="M12.939 23.842l-12.146-12.146c-0.586-0.586-0.586-1.536 0-2.121l1.417-1.417c0.585-0.585 1.533-0.586 2.119-0.002l9.672 9.626 9.672-9.626c0.586-0.583 1.534-0.582 2.119 0.002l1.417 1.417c0.586 0.586 0.586 1.536 0 2.121l-12.146 12.146c-0.586 0.586-1.536 0.586-2.121 0z"></path>
+              </svg>
+            </select>
+          </div>
+          <h1>Full select</h1>
+          <select class="full-select js-full-select" name="select-box" id="">
+            <option value="1">one</option>
+            <option value="2">two</option>
+            <option value="3">three</option>
+          </select>
+       </section>
       </main>
     </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/select2/dist/js/select2.full.min.js" ></script>
+    <script src="js/scripts.js" ></script>
+    <script src="js/cub.js" ></script>
   </body>
 </html>

@@ -1,0 +1,283 @@
+.transform-element {
+  height: 300px;
+  background-color: #3dc1f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.transform-action-area--1 {
+  &:hover {
+    .transform-element { 
+     transform: rotate(45deg);
+     background: rgb(131,58,180);
+     background: radial-gradient(circle, rgba(131,58,180,1) 19%, rgb(29, 253, 48) 45%);
+    }
+  }
+}
+
+.transform-action-area--2 {
+  &:hover {
+    .transform-element {
+       transform: scale(1.2);
+       background: rgb(238,8,8);
+       background: radial-gradient(circle, rgba(238,8,8,1) 0%, rgba(99,255,108,1) 98%);
+    }
+  }
+}
+
+.transform-action-area--3 {
+  &:hover {
+    .transform-element {
+      transform: translate(30px, 30px);
+      background: rgb(96,15,15);
+      background: radial-gradient(circle, rgba(96,15,15,1) 0%, rgba(163,142,62,1) 41%, rgba(99,255,108,1) 98%);
+    }
+  }
+}
+
+.transform-action-area--4 {
+  &:hover {
+    .transform-element {
+      transform: skew(25deg);
+      background: rgb(119, 49, 49);
+       background: radial-gradient(circle, rgb(48, 192, 29) 0%, rgb(13, 117, 18) 98%);
+    }
+  }
+}
+
+.transform-action-area--5 {
+  &:hover {
+    .transform-element {
+      transform: matrix(0.707107, 0.707107, -0.707107, 0.707107, -0.707107, 34.6482);
+      background: rgb(231,186,17);
+      background: linear-gradient(90deg, rgba(231,186,17,1) 40%, rgba(99,255,108,1) 98%);
+    }
+  }
+}
+
+.transform-action-area--6 {
+  &:hover {
+    .transform-element {
+       transform: rotate(160deg);
+       background: rgb(116,34,195);
+      background: radial-gradient(circle, rgba(116,34,195,1) 22%, rgba(253,187,45,1) 44%);
+    }
+  }
+}
+
+.transform-action-area--7 {
+  &:hover {
+    .transform-element {
+      transform: rotateX(60deg);
+      animation: rotateX 2s infinite;
+      animation-direction: alternate;
+      background-color: #12c421;
+    }
+  }
+}
+
+@keyframes rotateX {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(80deg);
+  }
+}
+
+.transform-action-area--8 {
+  &:hover {
+    .transform-element {
+      transform: rotateY(40deg);
+      animation: rotateY 2s infinite;
+      animation-direction: alternate;
+      background-color: #c41262;
+    }
+  }
+}
+
+@keyframes rotateY {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(70deg);
+  }
+}
+
+.transform-action-area--9 {
+  &:hover {
+    .transform-element {
+      transform: rotateZ(100deg);
+      animation: rotateZ 2s infinite;
+      animation-direction: alternate;
+      background-color: #0fa363;
+    }
+  }
+}
+
+@keyframes rotateZ {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(100deg);
+  }
+}
+
+.transform-action-area--10 {
+  &:hover {
+    .transform-element {
+       transform: scale(1.2);
+       background:rgb(9, 9, 32);
+       background: radial-gradient(circle, rgb(44, 106, 148) 0%, rgb(139, 46, 30) 100%);
+    }
+  }
+}
+
+.transform-action-area--11 {
+  &:hover {
+    .transform-element {
+      transform:rotate(45deg) translate(55px,65px);
+      background: rgb(152,231,17);
+      background: linear-gradient(90deg, rgba(152,231,17,1) 40%, rgba(255,99,248,1) 98%);
+    }
+  }
+}
+
+.transform-action-area--12 {
+  &:hover {
+    .transform-element {
+      transform:rotate(45deg) translate(35px,25px) perspective(600px);
+      background: rgb(17,231,76);
+      background: linear-gradient(90deg, rgba(17,231,76,1) 40%, rgba(100,99,255,1) 98%);
+    }
+  }
+}
+
+.transform-action-area--13 {
+  &:hover {
+    .transform-element {
+      transform: translate3d(42px, -62px, -135px);
+      background: rgb(55,126,241);
+      background: linear-gradient(90deg, rgba(55,126,241,1) 30%, rgba(96,237,149,1) 76%);
+    }
+  }
+}
+
+.transform-action-area--14 {
+  &:hover {
+    .transform-element {
+       width: 200px;
+       height: 200px;
+       margin: 20px auto;
+       transition: transform 2s linear;
+       transform-origin: right center;
+       transform-style: preserve-3D;
+       transform: rotate(360deg);
+       background: rgb(116,34,195);
+       background: radial-gradient(circle, rgba(116,34,195,1) 9%, rgba(45,253,53,1) 44%);
+    }
+  }
+}
+
+.transform-action-area--15 {
+  &:hover {
+    .transform-element {
+       width: 200px;
+       height: 200px;
+       margin: 20px auto;
+       transition: transform 2s linear;
+       transform-origin: bottom center;
+       transform-style: preserve-3D;
+       transform: rotate(360deg);
+       background: rgb(174,223,238);
+       background: linear-gradient(90deg, rgba(174,223,238,1) 16%, rgba(178,54,201,1) 92%);
+    }
+  }
+}
+
+.transform-action-area--16 {
+  &:hover {
+    .transform-element {
+       width: 200px;
+       height: 200px;
+       margin: 20px auto;
+       transition: transform 2s linear;
+       transform-origin: top center;
+       transform-style: preserve-3D;
+       transform: rotate(360deg);
+       background: rgb(174,223,238);
+       background: radial-gradient(circle, rgba(174,223,238,1) 16%, rgba(178,54,201,1) 92%);
+    }
+  }
+}
+
+.transform-action-area--17 {
+  &:hover {
+    .transform-element {
+      background: rgb(182, 63, 142);
+      width: 200px;
+      height: 200px;
+      margin: 20px auto;
+      transition: transform 3s linear;
+      transform-origin: bottom right;
+      transform-style: preserve-3D;
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.transform-action-area--18 {
+  &:hover {
+    .transform-element {
+      background: rgb(170, 97, 37);
+      width: 200px;
+      height: 200px;
+      margin: 20px auto;
+      transition: transform 3s linear;
+      transform-origin: bottom left;
+      transform-style: preserve-3D;
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.transform-action-area--19 {
+  &:hover {
+    .transform-element {
+      background: rgb(46, 80, 53);
+      width: 200px;
+      height: 200px;
+      margin: 20px auto;
+      transition: transform 2s linear;
+      transform-origin: top right;
+      transform-style: preserve-3D;
+      transform: rotate(360deg);
+
+    }
+  }
+}
+
+.transform-action-area--20 {
+  &:hover {
+    .transform-element {
+        background: rgb(46, 73, 80);
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+        transition: transform 3s linear;
+        transform-origin: top left;
+        transform-style: preserve-3D;
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+
+
+
+
+
