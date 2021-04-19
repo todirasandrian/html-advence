@@ -27,6 +27,8 @@
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.0",
     "save": "^2.4.0",
-    "select2": "^4.1.0-rc.0"
+    "select2": "^4.1.0-rc.0",
+    "swiper": "^6.5.7",
+    "tippy.js": "^6.3.1"
   }
 }

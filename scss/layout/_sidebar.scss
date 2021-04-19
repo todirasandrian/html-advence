@@ -1,14 +1,13 @@
-
-
 .sidebar {
   width: 250px;
   position: fixed;
   height: 100%;
   left: 0;
-  background: rgb(207, 129, 129); 
-  border-radius: 10px;
+  background: rgb(54,196,201);
+  background: linear-gradient(90deg, rgba(54,196,201,1) 13%, rgba(218,123,215,1) 98%);
+  border-radius: 20px;
   box-shadow: 5px 7px 10px rgba(168, 130, 130, 0.5);
-  z-index: 1;
+  z-index: 1; 
 }
 
 ul {
@@ -17,7 +16,8 @@ ul {
   
 }
 
- a {
+.sidebar
+a {
    display: flex;
    align-items: center;
    font-family: arial;
@@ -28,29 +28,31 @@ ul {
    padding: 10px 30px;
    height: 50px;
    transition: .5s ease;
-   border-radius: 0 30px;
+   border-radius: 0 50px;
 }
-a:hover {
+.sidebar a:hover {
   color: aqua;
   background: #585050;
   border-left-color: #5a3737;
 }
+
 ul {
   ul {
     position: absolute;
     left: 250px;
-    width: 200px;
+    width: 250px;
     top: 0;
     display: none;
-    background: rgb(197, 121, 121);
-    border-radius: 5px;
+    background: rgb(54,196,201);
+    background: linear-gradient(90deg, rgba(54,196,201,1) 13%, rgba(218,123,215,1) 98%);
+    border-radius: 20px;
     box-shadow: 2px 2px 10px rgb(78, 59, 59);
-    
   }
 }
 
 .dropdown {
-  position: relative; 
+  position:initial;
+  position: static; 
 }
 .dropdown:hover ul {
    display: initial;

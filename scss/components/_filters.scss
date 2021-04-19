@@ -1,5 +1,5 @@
 .filter-blur {
-  filter: blur(5px);
+  filter: blur(2px);
 }
 .filter-grayscale {
   filter: grayscale(100%);
@@ -11,7 +11,7 @@
   filter: sepia(90%);
 }
 .filter-drop-shadow {
-  filter: drop-shadow(1px -1px 3px red) invert(55%);
+  filter: drop-shadow(1px -1px 3px red) invert(15%);
 }
 .filter-hue-rotate {
   filter: hue-rotate(90dge);
@@ -20,10 +20,10 @@
   filter: brightness(0.5);
 }
 .filter-opacity {
-  filter: opacity(0.4);
+  filter: opacity(0.3);
 }
 .filter-invert {
-  filter: invert(50%);
+  filter: invert(25%);
 }
 .filter-saturate {
   filter: saturate(20%);
@@ -31,3 +31,16 @@
 // .filter-url {
 //   filter: url(<calea pentru svg>);
 // }
+
+
+
+.section-filters {
+  transition:transform 0.35s ease;
+
+img:hover {
+  -webkit-transform:scale(1.8); 
+  transform:scale(1.8);
+  z-index: 1;
+  }
+}
+

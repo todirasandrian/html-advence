@@ -1,89 +1,51 @@
 @import "../node_modules/breakpoint-sass/stylesheets/breakpoint" ;
-@import "variables";
-@import "helpers";
-@import "reset";
 @import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
-@import "footer";
-@import "filters";
-@import "gradients";
-@import "ratio";
-@import "transform";
-@import "cub";
-@import "square";
-@import "sidebar";
-@import "forms";
-body {
-  margin: 0;
-  padding: 0;
-  background: #e9d8d8;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  
-}
-
-.search-box {
-  input { 
-  position: absolute;
-  background: #FFFFFF;
-  border: 1px solid #1b1717;
-  box-sizing: border-box;
-  border-radius: 21px;
-  // left: 15px;
-  top: 15px;
-  }
-}
-.icons {
-  li {
-  display: inline-block;
-  position:relative;
-  left: 758px;
-  }
-}
-.main-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
-.header,
-.main {
- width: calc(100% - #{$sidebar-width});
- margin-left: $sidebar-width;
-}
-.header {
- height: $header-height;
- border-bottom: 5px solid$defoult-bodrer-color;
-}
-.main {
-  flex: 1;
-}
-.section + .section {
-  margin-top: 80px;
-}
-.section__title {
-  font-weight: 600;
-  font-size: 56px;
-  line-height: 67px;
-  color: #333333;
-  border-bottom: 1px solid #0D3268;
-  padding-bottom: 21px;
-  margin-bottom: 35px;
-}
-.section__content {
-  .col-6 {
-    margin-bottom: 35px;
-  }
-}
-.section__content {
-  .col-3 {
-    margin-bottom: 35px;
-  }
-}
+@import "base/variables";
+@import "helpers/helpers";
+@import "base/reset";
+@import "base/global-styles";
+@import "base/ratio";
+@import "layout/section";
+@import "components/filters";
+@import "components/forms";
+@import "components/gradients";
+@import "components/transform";
+@import "components/transition";
+@import "components/acasa";
 
 
- 
-  
 
-  
+
+// body {
+//   background: url($fonts-path);
+// }
+
+// .main-wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100vh;
+// }
+
+// .header,
+// .main {
+//   width: calc(100% - #{$sidebar-width});
+//   margin-left: $sidebar-width;
+// }
+// .header {
+//   height: $header-height;
+//   border-bottom: 5px solid$defoult-bodrer-color;
+// }
+// .main {
+//   flex: 1;
+//   position: relative;
+// }
+
+// .main-iframe {
+//   position: absolute;
+//   top: 0;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   width: 100%;
+//   height: 100%;
+// }
+

@@ -1,0 +1,286 @@
+
+ // Transition=====================================================
+ .transition__area {
+   position: relative;
+
+   .box {
+    width: 30%;
+    height: 300px;
+    background: rgba(112, 112, 89, 0.404);
+    margin: 10px;
+    box-sizing: border-box;
+    font-size: 50px;
+   }
+
+   &::after {
+     content: '';
+     padding-top: 100%;
+   }
+
+   &:hover {
+     .transition-child {
+       left: calc(100% - 50px);
+      //  background-color: blue;
+      //  opacity: 0.3;
+     }
+   }
+ }
+
+ .transition-child-first {
+   width: 50px;
+   height: 50px;
+   background: red;
+   position: relative; 
+   top: 0;
+   left: 0;
+   // transition-property: left;
+   // transition-duration: 1s;
+   // transition-timing-function: linear;
+   // transition-delay: 1s;
+   //toate se poate de pus intr-un "short hand" ca si mai jos
+   transition: left 1s linear 1s, background 500ms linear 2s, opacity 1s linear 1500ms;
+ }
+
+.transition-child-second {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  transition: width 2s, height 4s;
+
+   &:hover {
+     width: 300px;
+     height: 300px;
+  }
+}
+
+.transition-child-third {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+
+   &:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+  }
+}
+
+.transition-child-fourth {
+  width: 100px;
+  height: 100px;
+  background: rgb(76, 0, 255);
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+
+   &:hover {
+     width: 300px;
+     
+  }
+}
+
+.transition-child-fift {
+    width: 150px;
+    height: 150px;
+    background: red;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+
+   &:hover {
+    background-color: green;
+    cursor: pointer;
+  }
+}
+
+.transition-child-six {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  transition: width 2s, height 4s;
+
+   &:hover {
+    border-radius:50%;
+  }
+}
+// Animation========================================================
+.animation {
+  color: rgb(39, 99, 99);
+  align-items: center;
+  height: 100px;
+}
+
+@keyframes rocket {
+   0% {   
+    left: 0;
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  5% {
+    top: 0px;
+    left: calc(100% - 100px);
+    transform: rotate(90deg);
+   
+  }
+
+  7% {
+    top: 0px;
+    left: calc(100% - 100px);
+    transform: rotate(180deg);
+ }
+
+  10% {
+    top: 100px;
+    left: calc(100% - 100px);
+    transform: rotate(180deg); 
+ }
+
+  15% {
+    top: 100px;
+    left: 0px;
+    transform: rotate(320deg);
+ }
+
+  20% {
+    top: 200px;
+    left: 0px;
+    transform: rotate(90deg);
+ }
+
+  25% {
+    top: 200px;
+    left: calc(100% - 100px);
+    transform: rotate(180deg);
+ }
+
+  30% {
+    top: 300px;
+    left: calc(100% - 100px);
+    transform: rotate(270deg);
+ }
+
+  35% {
+    top: 300px;
+    left: 0px;
+    transform: rotate(320deg);
+ }
+
+  40% {
+    top: 400px;
+    left: 0px;
+    transform: rotate(90deg);
+ }
+
+  45% {
+    top: 400px;
+    left: calc(100% - 100px);
+    transform: rotate(180deg);
+ }
+  
+  50% {
+    top: 500px;
+    left: calc(100% - 100px);
+    transform: rotate(270deg);
+ }
+
+  /////////////////////////////////////
+
+  55% {
+    top: 400px;
+    left: calc(100% - 100px);
+    transform: rotate(360deg);
+  }
+
+  60% {
+    top: 400px;
+    left: 0px;
+    transform: rotate(180deg);
+  }
+
+  65% {
+    top: 300px;
+    left: 0px;
+    transform: rotate(270deg);
+  }
+
+  70% {
+    top: 300px;
+    left: calc(100% - 100px);
+    transform: rotate(0deg);
+   }
+
+  75% {
+    top: 200px;
+    left: calc(100% - 100px);
+    transform: rotate(0deg);
+   }
+
+  80% {
+    top: 200px;
+    left: 0px;
+    transform: rotate(0deg);
+  }
+
+  85% {
+    top: 100px;
+    left: 0px;
+    transform: rotate(0deg);
+  }
+
+  90% {
+    top: 100px;
+    left: calc(100% - 100px);
+    transform: rotate(0deg); 
+  }
+
+
+  95% {
+    top: 0px;
+    left: calc(100% - 100px);
+    transform: rotate(0deg);
+  }
+
+ 100% {   
+    left: 0;
+    top: 0;
+    transform: rotate(-270deg);
+  }
+}
+
+.animation__area {
+  .spaces {
+    width: 1300px;
+    height: auto;
+  }
+  position: relative; 
+  &::after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+
+  &:hover {
+    .rocket {
+      animation-play-state: running;
+    }
+  }
+}
+
+.rocket {
+  position: absolute;
+  animation-name: rocket;
+  animation-duration: 20s;
+  animation-iteration-count:  infinite;
+  animation-timing-function: ease-out;
+  animation-fill-mode: none;
+  animation-delay: 1s;
+  fill: rgb(70, 195, 245);
+  animation-direction:alternate;
+}

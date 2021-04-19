@@ -1,0 +1,87 @@
+//==================
+
+
+
+
+//butonul de cautare===============
+.searchBox {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  // transform:  translate(-40%,40%);
+  background: #2f3640;
+  height: 50px;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.searchBox:hover > .searchInput {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+}
+
+.searchButton {
+  color: white;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.searchInput {
+  border:none;
+  background: none;
+  outline:none;
+  float:left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.5s;
+  line-height: 40px;
+  width: 0px;
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+  width: 150px;
+  padding: 0 6px;
+  }
+}
+
+.icons {
+  display: flex;
+  position: relative;
+  padding-top: 20px;
+  padding-left:200px;
+  padding-right:0px;
+  align-items: flex-end;
+  
+   i {
+     margin-right: 50px;
+   }
+
+svg:hover {
+  fill:  #2f3640;
+  transform: scale(2, 2);
+  }
+}
+
+.header,
+.main {
+  width: calc(100% - #{$sidebar-width});
+  margin-left: $sidebar-width;
+}
+.header {
+  height: $header-height;
+  border-bottom: 5px solid$defoult-bodrer-color;
+}
